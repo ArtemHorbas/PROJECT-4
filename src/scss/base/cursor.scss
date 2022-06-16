@@ -1,0 +1,33 @@
+.cursor{
+	position: fixed;
+	background: $secondary-color;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1111;
+	transform: scale(1);
+	transition: 0.3s cubic-bezier(0.075, -1.27, 0.3, 2.33) transform;
+	&.active{
+		transform: scale(0);
+	}
+}
+
+.follower{
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	border: 1px solid $secondary-color;
+	border-radius: 100%;
+	pointer-events: none;
+	user-select: none;
+	z-index: 111;
+	transition: 0.3s cubic-bezier(0.075, -1.27, 0.3, 2.33) transform,  0.2s cubic-bezier(0.075, -0.27, 0.3, 1.33) background;
+	transform: translate(4.1px, 3px);
+	&.active{
+		transform: scale(2);
+		background: $secondary-color;
+		z-index: 0;
+	}
+}

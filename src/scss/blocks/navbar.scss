@@ -1,0 +1,61 @@
+//=========NAVBAR===================
+
+nav{
+	padding-top: 20px;
+	line-height: 150%;
+	padding-bottom: 110px;
+}
+
+.logo{
+	color: $primary-color;
+}
+
+.nav-logo--title{
+	position: relative;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+
+	&::after{
+		position: absolute;
+		left: 0;
+		bottom: -50%;
+		transform: translateY(-50%);
+		
+		content: 'Web devoleper';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+	}
+}
+
+.nav-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list {
+	ul{
+		display: flex;
+		align-items: center;
+	}
+
+	li{
+		margin-right: 30px;
+
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+
+}
+
+@media (max-width: $md3) {
+	.nav-list{
+		display: none;
+	}
+}
+
+//=======================================

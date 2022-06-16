@@ -1,0 +1,99 @@
+footer{
+	margin-top: 125px;
+	background-image: url('@img/footer/Group.png');
+}
+
+
+
+.footer-text {
+	margin-left: auto;
+	padding-top: 70px;
+	max-width: 540px;
+}
+.footer-title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 55px;
+
+	margin-bottom: 35px;
+
+	@media (max-width: 440px) {
+		font-size: 22px;
+	}
+
+	@media (max-width: 317px) {
+		font-size: 18px;
+	}
+}
+.footer-subtitle {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 170%;
+	margin-bottom: 50px;
+}
+
+.footer-form{
+	display: flex;
+	flex-direction: column;
+
+	input{
+		margin-bottom: 25px;
+
+		background: none;
+		outline: none;
+		border: none;
+		border-bottom: 1px solid #FFFF;
+		padding: 5px 0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 170%;
+		color: #FFFF;
+
+		&::placeholder{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 170%;
+			color: #FFFF;
+		}
+	}
+
+	textarea{
+		resize: none;
+		margin-bottom: 35px;
+		min-height: 100px;
+		background: none;
+		outline: none;
+		border: none;
+		border-bottom: 1px solid #FFFF;
+		padding: 5px 0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 170%;
+		color: #FFFF;
+
+		&::placeholder{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 170%;
+			color: #FFFF;
+		}
+	}
+}
+
+#footer-button{
+	z-index: 1;
+	
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: $primary-color;
+	margin-left: auto;
+	margin-right: 80px;
+}
